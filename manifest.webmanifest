@@ -1,0 +1,72 @@
+{
+  "name": "Cadence",
+  "short_name": "Cadence",
+  "description": "A study and everyday timer: Focus, Deadline, Calm, Talk and Timers. Works offline.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#141617",
+  "theme_color": "#141617",
+  "categories": [
+    "productivity",
+    "education",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "1 min",
+      "short_name": "1 min",
+      "url": "./?quick=1",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "5 min",
+      "short_name": "5 min",
+      "url": "./?quick=5",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "10 min",
+      "short_name": "10 min",
+      "url": "./?quick=10",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
