@@ -5,7 +5,7 @@
    - A link that carries a session is the one thing fetched fresh first (see fetch).
    - Every notification is shown from here (registration.showNotification), which is the only way Chrome on Android allows,
      and the only way to have action buttons. A tap on a button is passed to the open timer, or opens it. */
-const BUILD = "24d5ef1f82ff", CACHE = 'ixora-' + BUILD, FILES = ["./","manifest.webmanifest","fonts/red-hat-display.woff2","fonts/red-hat-mono.woff2","fonts/red-hat-text.woff2","icons/apple-touch-icon.png","icons/badge-96.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","icons/maskable-512.png"];
+const BUILD = "28c2479abb74", CACHE = 'ixora-' + BUILD, FILES = ["./","manifest.webmanifest","fonts/red-hat-display.woff2","fonts/red-hat-mono.woff2","fonts/red-hat-text.woff2","icons/apple-touch-icon.png","icons/badge-96.png","icons/icon-192.png","icons/icon-512.png","icons/icon.svg","icons/maskable-512.png"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES.map(f => new Request(f, {cache:'reload'}))))); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys()
   .then(ks => Promise.all(ks.filter(k => k.startsWith('ixora-') && k !== CACHE).map(k => caches.delete(k))))
